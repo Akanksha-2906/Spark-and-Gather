@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plan Your Next Event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        textarea.form-control {
+    padding: 10px 16px !important;
+    line-height: 1.4 !important;
+}
+    </style>
+
+</head>
+
+<body>
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <img src="./spark_logo.jpg" alt="Spark & Gather Logo" class="navbar-logo">
+                <div class="brand-wrapper" >
+                    <span class="fw-bold text-warning py-1">Spark & Gather</span><br>
+                    <p class="brand-text py-1">Seamless Strategy. Memorable Moments.</p>
+                </div>
+        </a>
+
+        <button class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+                aria-controls="navMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="services.html">What We Do</a></li>
+                <li class="nav-item"><a class="nav-link active px-3" href="planner.html">Planner</a></li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-warning text-dark fw-bold ms-lg-3 px-3 rounded-pill shadow-sm"
+                       href="contact.html">Connect</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION  -->
+
+<section class="hero d-flex align-items-center text-white text-center">
+    <div class="container">
+        <h1 class="display-6 fw-bold">Plan your next event!</h1>
+        <p class="lead text-warning ">Provide a few details below, and our strategy team will build a preliminary framework for your review.</p>
+    </div>
+</section>
+
+<!--  FORM SECTION  -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <p class="fs-5 mb-5 text-secondary col-lg-7 mx-auto">
+                Fill out the form to request time with the team to talk through your event objectives and how we can make the event a success.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6 border rounded-4 p-4 p-lg-5 shadow p-3">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="70c55c6e-e830-4277-8eca-824af865ee5a">
+                    <!-- Email Subject -->
+                    <input type="hidden" name="subject" value="New Event Planning Request">
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">Name:</label>
+                        <input type="text" placeholder="Enter your name here"  name="Name" class="form-control shadow-sm" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">Phone Number:</label>
+                        <input type="tel" placeholder="Enter your phone number here" name="Phone" class="form-control shadow-sm" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">Email:</label>
+                        <input type="email" placeholder="Enter your email here" name="Email" class="form-control shadow-sm" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">Company Name:</label>
+                        <input type="text" placeholder="Enter your company name here" name="Company" class="form-control shadow-sm" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">Tell us more about your event.</label>
+                        <textarea name="Message" class="form-control shadow-sm" placeholder="Please include details like type of event, dates and location" rows=3 required></textarea>
+                    </div>
+
+                    <div class="text-center mb-3">
+                        <button type="submit" class="btn-glow fw-bold text-light rounded-pill shadow-sm px-4">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row gy-5">
+
+            <!-- Column 1 -->
+            <div class="col-lg">
+                <h4 class="fw-bold mb-3">Spark & Gather</h4>
+                <p class="mb-1">Mumbai, India</p>
+                <p class="mb-1"><strong>Phone:</strong> +91-9654787998</p>
+                <p class="mb-0">
+                    <strong>Email:</strong>
+                    <a href="mailto:hello@sparkandgather.io" class="text-decoration-none text-info">hello@sparkandgather.io</a>
+                </p>
+            </div>
+             <!-- Column 2 -->
+            <div class="col-lg">
+                <h5 class="fw-bold mb-3">Corporate Services</h5>
+                <ul class="list-unstyled small">
+                    <li class="mb-2">📋 Event Logistics</li>
+                    <li class="mb-2">💰 Strategic Budgeting</li>
+                    <li class="mb-2">🏢 Venue & Site Curation</li>
+                </ul>
+            </div>           
+            <!-- Column 3 -->
+            <div class="col-lg">
+                <h5 class="fw-bold mb-3">Event Management</h5>
+                <ul class="list-unstyled small">
+                    <li class="mb-2">🎉 End-to-End Event Planning</li>
+                    <li class="mb-2">🥂 Receptions & Entertainment</li>
+                    <li class="mb-2">🍴 Food & Beverage</li>
+                </ul>
+            </div>
+            <!-- Column 4 -->
+            <div class="col-lg">
+                <h5 class="fw-bold mb-3">Brand & Gifts</h5>
+                <ul class="list-unstyled small fs-8">
+                    <li class="mb-2">🎨 Branding & Signage</li>
+                    <li class="mb-2">🎤 Speaker Management</li>
+                    <li class="mb-2">🚚 On & Off-site Logistics</li>
+                </ul>
+            </div>
+            <!-- Column 5 -->
+            <div class="col-lg">
+                <h5 class="fw-bold mb-3">Subscribe</h5>
+                <p class="small">Get event tips and updates from our team.</p>
+                <form id="subscribeForm">
+                    <input type="hidden" name="access_key" value="70c55c6e-e830-4277-8eca-824af865ee5a">
+                    <input type="hidden" name="subject" value="New Newsletter Subscription">
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Your email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 fw-bold rounded-3">Subscribe</button>
+                </form>
+
+                <div id="subscribeSuccess" class="alert alert-success mt-3 d-none">✅ Thank you for subscribing!
+</div>
+</div>
+         <!-- Bottom Line -->
+        <p class="text-center opacity-50 mt-4 pt-3 border-top border-secondary small">
+            © 2026 Spark & Gather. All rights reserved.
+        </p>
+</footer>
+
+<script>
+    // Thank you for subscribing logic
+    document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("subscribeForm");
+    form.addEventListener("submit", async function(e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+            const result = await response.json();
+            if (result.success) {
+                document.getElementById("subscribeSuccess").classList.remove("d-none");
+                form.reset();
+            } else {
+                alert("Something went wrong.");
+            }
+        } catch (error) {
+            alert("Submission failed.");
+        }
+    });
+});
+</script>
+
+</body>
+</html>

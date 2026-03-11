@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spark & Gather | Event Management</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <img src="./spark_logo.jpg" alt="Spark & Gather Logo" class="navbar-logo">
+                <div class="brand-wrapper" >
+                    <span class="fw-bold text-warning py-1">Spark & Gather</span><br>
+                    <p class="brand-text py-1">Seamless Strategy. Memorable Moments.</p>
+                </div>
+        </a>
+
+        <button class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+                aria-controls="navMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item"><a class="nav-link active px-3" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="services.html">What We Do</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="planner.html">Planner</a></li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-warning text-dark fw-bold ms-lg-3 px-3 rounded-pill shadow-sm"
+                       href="contact.html">Connect</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hero d-flex align-items-center text-white text-center">
+    <div class="container" >
+     
+        <h1 class="display-6 fw-bold animate__animated">Your Vision. <br> <span class="text-warning">Our Execution.</span></h1>
+        <p class="lead animate__animated animate__fadeInUp animate__delay-1s opacity-75">We transform corporate objectives into immersive physical and digital experiences.</p>
+        <div class="animate__animated animate__zoomIn animate__delay-1s" >
+            <a href="planner.html" class="btn btn-outline-warning btn-lg mt-8 px-5 rounded-pill fw-bold">Start your event Planning ></a>
+            <a href="mailto:ashup7875@gmail.com" class="btn btn-outline-warning btn-lg mt-8 px-5 rounded-pill fw-bold">Let's Talk</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-4 bg-white">
+    <div class="container py-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="text-center animate-on-scroll">
+                    <h2 class="text-warning fw-bold text-uppercase mb-3" style="letter-spacing: 2px;">Elevating Every Interaction.</h2>
+                    <div class="mx-auto bg-warning mb-5" style="height: 3px; width: 60px;"></div>
+                    
+                    <p class="fs-5 text-secondary leading-relaxed mb-4">
+                        Spark & Gather is a full-service event agency built on the belief that every gathering is an opportunity to build community and drive impact.
+                    </p>
+                    
+                    <p class="fs-5 text-secondary leading-relaxed mb-4">
+                        From high-stakes board meetings to global conferences, we curate every detail—venue, logistics, and branding—to ensure your message is felt as much as it is heard.
+                    </p>
+                    
+                    <div class="p-4 rounded-4 bg-light border border-warning-subtle shadow-sm mt-5">
+                        <p class="fs-5 fw-semibold text-dark mb-0">
+                            Streamline your planning, achieve measurable results, and inspire your attendees.
+                            We don't just work for you; we work as an extension of your team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-4 bg-light">
+    <div class="container py-lg-5">
+        <div class="text-center mb-5 animate-on-scroll">
+            <h2 class="fw-bold display-7">What We Do</h2>
+            <div class="mx-auto bg-warning mt-2" style="height: 4px; width: 60px;"></div>
+            </div>
+
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 animate-on-scroll">
+                <div class="service-card p-4 h-100 text-center shadow-sm">
+                    <div class="fs-1 mb-3 text-warning">🎯</div>
+                    <h5 class="fw-bold">Corporate Event Solutions</h5>
+                    <p class="small text-secondary fw-normal">From conferences and seminars to product launches and incentive trips.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 animate-on-scroll">
+                <div class="service-card p-4 h-100 text-center shadow-sm">
+                    <div class="fs-1 mb-3 text-warning">📊</div>
+                    <h5 class="fw-bold">Event Strategy & Management</h5>
+                    <p class="small text-secondary fw-normal">We design event strategies, manage vendors, production, and logistics.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 animate-on-scroll">
+                <div class="service-card p-4 h-100 text-center shadow-sm">
+                    <div class="fs-1 mb-3 text-warning">🌐</div>
+                    <h5 class="fw-bold">Hybrid & Trade Events</h5>
+                    <p class="small text-secondary fw-normal">Delivering hybrid events and trade shows that engage both in-person and virtual audiences.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 animate-on-scroll">
+                <div class="service-card p-4 h-100 text-center shadow-sm">
+                    <div class="fs-1 mb-3 text-warning">🎭</div>
+                    <h5 class="fw-bold">Receptions & Entertainment</h5>
+                    <p class="small text-secondary fw-normal">Sophisticated receptions and vibrant experiences tailored to your objectives.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 animate-on-scroll">
+                <div class="service-card p-4 h-100 text-center shadow-sm">
+                    <div class="fs-1 mb-3 text-warning">🍽️</div>
+                    <h5 class="fw-bold">Food & Beverage</h5>
+                    <p class="small text-secondary fw-normal">High-quality culinary experiences with cost control and flawless service.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 animate-on-scroll">
+                <div class="service-card p-4 h-100 text-center shadow-sm">
+                    <div class="fs-1 mb-3 text-warning">✨</div>
+                    <h5 class="fw-bold">Branding & Corporate Gifts</h5>
+                    <p class="small text-secondary fw-normal">Creative branding, stage design, and customized swag to reinforce your brand.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 animate-on-scroll">
+                <div class="service-card p-4 h-100 text-center shadow-sm">
+                    <div class="fs-1 mb-3 text-warning">🎤</div>
+                    <h5 class="fw-bold">Speaker & Vendor Management</h5>
+                    <p class="small text-secondary fw-normal">Connecting with top speakers and managing reliable vendors to maximize impact..</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 animate-on-scroll">
+                <div class="service-card p-4 h-100 text-center shadow-sm">
+                    <div class="fs-1 mb-3 text-warning">🚚</div>
+                    <h5 class="fw-bold">On & Off-site Logistics</h5>
+                    <p class="small text-secondary fw-normal">Detailed planning and execution of all logistical requirements for smooth operations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row gy-5">
+
+            <!-- Column 1 -->
+            <div class="col-lg">
+                <h4 class="fw-bold mb-3">Spark & Gather</h4>
+                <p class="mb-1">Mumbai, India</p>
+                <p class="mb-1"><strong>Phone:</strong> +91-9654787998</p>
+                <p class="mb-0">
+                    <strong>Email:</strong>
+                    <a href="mailto:hello@sparkandgather.io" class="text-decoration-none text-info">hello@sparkandgather.io</a>
+                </p>
+            </div>
+             <!-- Column 2 -->
+            <div class="col-lg">
+                <h5 class="fw-bold mb-3">Corporate Services</h5>
+                <ul class="list-unstyled small">
+                    <li class="mb-2">📋 Event Logistics</li>
+                    <li class="mb-2">💰 Strategic Budgeting</li>
+                    <li class="mb-2">🏢 Venue & Site Curation</li>
+                </ul>
+            </div>           
+            <!-- Column 3 -->
+            <div class="col-lg">
+                <h5 class="fw-bold mb-3">Event Management</h5>
+                <ul class="list-unstyled small">
+                    <li class="mb-2">🎉 End-to-End Event Planning</li>
+                    <li class="mb-2">🥂 Receptions & Entertainment</li>
+                    <li class="mb-2">🍴 Food & Beverage</li>
+                </ul>
+            </div>
+            <!-- Column 4 -->
+            <div class="col-lg">
+                <h5 class="fw-bold mb-3">Brand & Gifts</h5>
+                <ul class="list-unstyled small fs-8">
+                    <li class="mb-2">🎨 Branding & Signage</li>
+                    <li class="mb-2">🎤 Speaker Management</li>
+                    <li class="mb-2">🚚 On & Off-site Logistics</li>
+                </ul>
+            </div>
+            <!-- Column 5 -->
+            <div class="col-lg">
+                <h5 class="fw-bold mb-3">Subscribe</h5>
+                <p class="small">Get event tips and updates from our team.</p>
+                <form id="subscribeForm">
+                    <input type="hidden" name="access_key" value="70c55c6e-e830-4277-8eca-824af865ee5a">
+                    <input type="hidden" name="subject" value="New Newsletter Subscription">
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Your email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 fw-bold rounded-3">Subscribe</button>
+                </form>
+
+                <div id="subscribeSuccess" class="alert alert-success mt-3 d-none">✅ Thank you for subscribing!
+</div>
+</div>
+         <!-- Bottom Line -->
+        <p class="text-center opacity-50 mt-4 pt-3 border-top border-secondary small">
+            © 2026 Spark & Gather. All rights reserved.
+        </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // --- Scroll Trigger Script ---
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(element => {
+            observer.observe(element);
+        });
+    });
+
+    window.addEventListener("scroll", function() {
+    const nav = document.getElementById("navbar");
+    nav.classList.toggle("scrolled", window.scrollY > 50);
+});
+
+// Thank you for subscribing logic
+    document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("subscribeForm");
+    form.addEventListener("submit", async function(e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+            const result = await response.json();
+            if (result.success) {
+                document.getElementById("subscribeSuccess").classList.remove("d-none");
+                form.reset();
+            } else {
+                alert("Something went wrong.");
+            }
+        } catch (error) {
+            alert("Submission failed.");
+        }
+    });
+    });
+
+</script>
+
+</body>
+</html>

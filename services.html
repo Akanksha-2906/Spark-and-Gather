@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What We Do | Our Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* What We Do page - Hero Section */
+        .services-hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.75)), 
+                        url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1170?auto=format&fit=crop&w=1600&q=80') !important;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 82vh;
+            min-height: 500px; 
+            margin-top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        body { padding-top: 60px; }
+        .service-card {
+            transition: transform 0.3s ease;
+            border: 1px solid #eee !important; }
+        .service-card:hover {
+            transform: translateY(-5px); }
+
+        .extra-card {
+            display: none; }
+
+        .extra-card.show {
+            display: block;  }
+    </style>
+</head>
+
+<body>
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <img src="./spark_logo.jpg" alt="Spark & Gather Logo" class="navbar-logo">
+                <div class="brand-wrapper" >
+                    <span class="fw-bold text-warning py-1">Spark & Gather</span><br>
+                    <p class="brand-text py-1">Seamless Strategy. Memorable Moments</p>
+                </div>
+        </a>
+
+        <button class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+                aria-controls="navMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link active px-3" href="services.html">What We Do</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="planner.html">Planner</a></li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-warning text-dark fw-bold ms-lg-3 px-3 rounded-pill shadow-sm"
+                       href="contact.html">Connect</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="services-hero d-flex align-items-center justify-content-center text-white">
+    <div class="container text-center">
+        <h1 class="display-6 fw-bold animate__animated animate__fadeInUp">What we do? 
+        <span class="text-warning"> Precision Execution.</span>
+        <p class="lead animate__animated animate__delay-1s text-warning">From initial strategy to final gathering, we manage the technical and creative lifecycle of your corporate events.</p>
+        </h1>
+    </div>
+</section>
+    
+<section class="py-5 bg-white">
+    <div class="container py-lg-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-10 reveal">
+                <h2 class="text-warning fw-bold text-uppercase mb-3" style="letter-spacing: 2px;">Our Event Management Solutions</h2>
+                <div class="mx-auto bg-warning mb-5" style="height: 3px; width: 60px;"></div>
+                
+                <p class="fs-5 text-secondary leading-relaxed mb-4">
+                    Spark & Gather makes event planning simple, strategic, and stress-free. 
+                </p>
+                <p class="fs-5 text-secondary leading-relaxed mb-4">
+                    Whether you’re hosting a large-scale conference or an exclusive incentive trip, our crew handles every detail so you can focus on results, not logistics. 
+                </p>
+                <p class="fs-5 text-secondary leading-relaxed mb-0">
+                    From start to finish, we deliver the seamless experience your attendees expect.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5 reveal">
+            <h2 class="fw-bold">Our Expertise Includes:</h2>
+        </div>
+        
+        <div class="row g-4" id="cardcontainer">
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card shadow-sm p-4 h-100">
+                    <h5 class="fw-bold text-warning">Logistical Mastery:</h5>
+                    <p class="small text-secondary">From registration flows to on-site crowd management, we ensure every moving part works in perfect harmony.</p>
+                </div>
+            </div>
+          
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card shadow-sm p-4 h-100">
+                    <h5 class="fw-bold text-warning">Strategic Budgeting: </h5>
+                    <p class="small text-secondary">Transparent financial modeling designed to maximize ROI while maintaining the highest quality standards.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card shadow-sm p-4 h-100">
+                    <h5 class="fw-bold text-warning">Purpose-Driven Strategy:</h5>
+                    <p class="small text-secondary">We align every session, speaker, and venue with your organization's core business objectives.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 extra-card">
+                <div class="card service-card shadow-sm p-4 h-100">
+                    <h5 class="fw-bold text-warning">Venue & Site Curation:</h5>
+                    <p class="small text-secondary">We discover and negotiate the ideal locations that match your brand’s aesthetic and logistical needs.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 extra-card">
+                <div class="card service-card shadow-sm p-4 h-100">
+                    <h5 class="fw-bold text-warning">Receptions & Experience:</h5>
+                    <p class="small text-secondary">From sophisticated galas to high-impact networking, we ensure precision through curated entertainment.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 extra-card">
+                <div class="card service-card shadow-sm p-4 h-100">
+                    <h5 class="fw-bold text-warning">Branding & Signage:</h5>
+                    <p class="small text-secondary">Creative services including stage design, motion graphics, and environmental branding to enhance the attendee journey.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 extra-card">
+                <div class="card service-card shadow-sm p-4 h-100">
+                    <h5 class="fw-bold text-warning">Speaker & Talent Sourcing:</h5>
+                    <p class="small text-secondary">We connect you with industry leaders and diverse voices to amplify your event’s credibility.</p>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4 extra-card">
+                <div class="card service-card shadow-sm p-4 h-100">
+                    <h5 class="fw-bold text-warning">Culinary Management:</h5>
+                    <p class="small text-secondary">Exceptional food and beverage quality paired with operational efficiency and cost control.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center mt-4">
+                <button id="toggleBtn" class="btn-glow fw-bold text-light rounded-pill shadow-sm px-4">Show More</button>
+            </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row gy-5">
+
+            <!-- Column 1 -->
+            <div class="col-lg">
+                <h4 class="fw-bold mb-3">Spark & Gather</h4>
+                <p class="mb-1">Mumbai, India</p>
+                <p class="mb-1"><strong>Phone:</strong> +91-9654787998</p>
+                <p class="mb-0">
+                    <strong>Email:</strong>
+                    <a href="mailto:hello@sparkandgather.io" class="text-decoration-none text-info">hello@sparkandgather.io</a>
+                </p>
+            </div>
+             <!-- Column 2 -->
+            <div class="col-lg">
+                <h5 class="fw-bold mb-3">Corporate Services</h5>
+                <ul class="list-unstyled small">
+                    <li class="mb-2">📋 Event Logistics</li>
+                    <li class="mb-2">💰 Strategic Budgeting</li>
+                    <li class="mb-2">🏢 Venue & Site Curation</li>
+                </ul>
+            </div>           
+            <!-- Column 3 -->
+            <div class="col-lg">
+                <h5 class="fw-bold mb-3">Event Management</h5>
+                <ul class="list-unstyled small">
+                    <li class="mb-2">🎉 End-to-End Event Planning</li>
+                    <li class="mb-2">🥂 Receptions & Entertainment</li>
+                    <li class="mb-2">🍴 Food & Beverage</li>
+                </ul>
+            </div>
+            <!-- Column 4 -->
+            <div class="col-lg">
+                <h5 class="fw-bold mb-3">Brand & Gifts</h5>
+                <ul class="list-unstyled small fs-8">
+                    <li class="mb-2">🎨 Branding & Signage</li>
+                    <li class="mb-2">🎤 Speaker Management</li>
+                    <li class="mb-2">🚚 On & Off-site Logistics</li>
+                </ul>
+            </div>
+            <!-- Column 5 -->
+            <div class="col-lg">
+                <h5 class="fw-bold mb-3">Subscribe</h5>
+                <p class="small">Get event tips and updates from our team.</p>
+                <form id="subscribeForm">
+                    <input type="hidden" name="access_key" value="70c55c6e-e830-4277-8eca-824af865ee5a">
+                    <input type="hidden" name="subject" value="New Newsletter Subscription">
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Your email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 fw-bold rounded-3">Subscribe</button>
+                </form>
+
+                <div id="subscribeSuccess" class="alert alert-success mt-3 d-none">✅ Thank you for subscribing!
+</div>
+</div>
+         <!-- Bottom Line -->
+        <p class="text-center opacity-50 mt-4 pt-3 border-top border-secondary small">
+            © 2026 Spark & Gather. All rights reserved.
+        </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Reveal animation logic
+    const reveal = () => {
+        const reveals = document.querySelectorAll(".reveal");
+        reveals.forEach(el => {
+            let windowHeight = window.innerHeight;
+            let elementTop = el.getBoundingClientRect().top;
+            if (elementTop < windowHeight - 100) el.classList.add("active");
+        });
+    }
+    window.addEventListener("scroll", reveal);
+    window.onload = reveal;
+
+    // Navbar scroll logic
+    window.onscroll = () => {
+        const nav = document.querySelector('#navbar');
+        if (window.scrollY > 50) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+    };
+
+    // Show More/Less toggle logic
+    const toggleBtn = document.getElementById("toggleBtn");
+    const extraCards = document.querySelectorAll(".extra-card");
+
+    toggleBtn.addEventListener("click", function () {
+        extraCards.forEach(card => {
+            card.classList.toggle("show");
+        })
+
+        if (toggleBtn.textContent === "Show More") {
+            toggleBtn.textContent = "Show Less";
+        } else {
+            toggleBtn.textContent = "Show More";
+        }
+    });
+
+    // Thank you for subscribing logic
+    document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("subscribeForm");
+    form.addEventListener("submit", async function(e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+            const result = await response.json();
+            if (result.success) {
+                document.getElementById("subscribeSuccess").classList.remove("d-none");
+                form.reset();
+            } else {
+                alert("Something went wrong.");
+            }
+        } catch (error) {
+            alert("Submission failed.");
+        }
+    });
+    });
+    
+</script>
+
+</body>
+</html>
